@@ -25,9 +25,9 @@ class CreatePlayersTable extends Migration
             $table->integer('spg');
             $table->integer('bpg');
             $table->integer('tpg');
-            $table->float('fgPercent');
-            $table->float('ftPercent');
-            $table->float('tpPercent');
+            $table->float('fgPercent', 8, 2);
+            $table->float('ftPercent', 8, 2);
+            $table->float('tpPercent', 8, 2);
             $table->timestamps();
         });
     }
